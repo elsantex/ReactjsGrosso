@@ -1,0 +1,18 @@
+.card{
+    background-color: #202124;
+    width: 200px;
+    color: rgb(204, 197, 197);
+    border: 1px gray solid;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.description-container{
+    padding: 10px;
+}
+
+.personaje{
+    width: 200px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}

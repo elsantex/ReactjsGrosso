@@ -1,0 +1,36 @@
+.navbar {  
+    background-color: #1a1f29;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logoNav categories cart";
+  }
+  
+  .logoNav {
+     grid-area: logoNav; 
+     display: flex ;
+     width: 100px;
+    align-self: flex-start;
+    }
+  
+  .categories { 
+    grid-area: categories;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+  
+ .cart { 
+    grid-area: cart;
+    display:flex ;
+    justify-content: center;
+    align-self: center;
+    }

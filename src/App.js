@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import simpsonsApi from "./APIrest/simpsonsApi";
+import Card from "./components/Cards/Card";
+import Navbar from "./components/navbar/Navbar";
+import "./App.css"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div>
+    <header>
+      <Navbar/>
+    </header>
+    <div className="principal_container">
+
+      <h1>Characters</h1>
+        <div className="cards_container">
+          {simpsonsApi.map((character, i) => (  
+            <Card key = {i}
+              name = {character.character}
+              image = {character.image}
+              quote = {character.quote}
+            />
+          ))}
+      </div>
     </div>
+  </div>
   );
 }
 
