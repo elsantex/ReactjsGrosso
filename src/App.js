@@ -1,5 +1,5 @@
 import simpsonsApi from "./APIrest/simpsonsApi";
-import Card from "./components/Cards/Card";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Navbar from "./components/navbar/Navbar";
 import "./App.css"
 
@@ -15,7 +15,7 @@ function App() {
       <h1>Characters</h1>
         <div className="cards_container">
           {simpsonsApi.map((character, i) => (  
-            <Card key = {i}
+            <ItemListContainer key = {i}
               name = {character.character}
               image = {character.image}
               quote = {character.quote}

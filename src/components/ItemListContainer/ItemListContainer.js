@@ -1,8 +1,8 @@
-import "./Card.css"
+import "./ItemListContainer.css"
 
-const Card = ({name, image, quote}) => {
+const ItemListContainer = ({name, image, quote}) => {
     return(
-      <div className="card">
+      <div className="ItemListContainer">
           <img className="personaje" alt={`el personaje es ${name}`} src={image} />
           <div className="description-container">
           <h3>{name}</h3>
@@ -12,4 +12,4 @@ const Card = ({name, image, quote}) => {
     )
   }
 
-  export default Card
+  export default ItemListContainer

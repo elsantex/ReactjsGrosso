@@ -6,7 +6,7 @@ import "./Navbar.css"
 const Navbar = () =>{
     return(
         <div className="navbar">
-            <img className="logoNav" src={require("./logo1.jpg")} alt="" />     
+            <img className="logoNav" src={require("./logo1.jpg")} alt="Logo de la pagina" />     
              <div className="categories">
                 <CategoryButton/>
                 <CategoryButton/>   
