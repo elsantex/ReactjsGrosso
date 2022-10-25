@@ -1,91 +1,129 @@
 
 
-const simpsonsApi = [
+const productos = [
     {
       id:0,
-      category:"adultos",
-      quote:"Yeah. Call this an unfair generalization if you must.. but old people are no good at everything",
-      character:"Moe Szyslak",
-      image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FMoeSzyslak.png?1497567512411",
-    characterDirection:"Right"
+      category:"TV",
+      description:"Resolución:3840 x 2160",
+      description2:"Formato de pantalla: Plano",
+      item:`Smart TV 4K UHD Samsung 75” `,
+      precio:400000,
+      image:"https://images.fravega.com/f500/cb62ff72942d27494e4fda22751d256f.jpg",
+    
   },
     {
       id:1,
-      category:"adultos",
-      quote:"Hello, Simpson. I'm riding the bus today becuase Mother hid my car keys to punish me for talking to a woman on the phone. She was right to do it.",
-    character:"Principal Skinner",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FSeymourSkinner.png?1497567511460",
-    characterDirection:"Right"
+      category:"TV",
+      description:"Resolución:3840 x 2160",
+      description2:"Formato de pantalla: Plano",
+      item:`Smart TV 4K UHD 55" Admiral`,
+      precio:150000,
+    image:"https://images.fravega.com/f500/2d277ff6b1ddbd8c14092c6b199c2ca4.jpg",
+    
   },
     {
       id:2,
-      category:"ninos",
-      quote:"That's where I saw the leprechaun...He told me to burn things.",
-    character:"Ralph Wiggum",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523",
-    characterDirection:"Left"
-  },
+      category:"TV",
+      description:"Resolución:1920 x 1080",
+      description2:"Formato de pantalla: Plano",
+    item:`Smart TV 40" Full HD TCL`,
+    precio:75000,
+    image:"https://images.fravega.com/f500/1581ea7fe76bf78887561f2f98369269.jpg",
+      },
     {
       id:3,
-      category:"ninos",
-      quote:"Me fail English? That's unpossible.",
-    character:"Ralph Wiggum",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523",
-    characterDirection:"Left"
-  },
+      category:"TV",
+      description:"Resolución:3840 x 2160",
+      description2:"Formato de pantalla: Plano",
+    item:`Smart TV 4K 65" LG`,
+    precio:200000,
+    image:"https://images.fravega.com/f500/b96d94fb4da04a80ccb944e316a93343.jpg",
+      },
     {
       id:4,
-      category:"adultos",
-      quote:"Oh Yeah!",
-      character:"Duffman",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FDuffman.png?1497567511709",
-    characterDirection:"Left"
-  },
+      category:"Smartphone",
+      description:"Camara principal: 50.0 MP + 12.0 MP + 10.0 MP",
+      description2:"Camara frontal: 4.0 MP + 10.0 MP",
+      item:"Celular Samsung Galaxy Z Fold4 512GB",
+      precio:430000,
+    image:"https://images.fravega.com/f500/d01047ac1160082d33a808fce19fff3d.jpg",
+      },
     {
       id:5,
-      category:"adultos",
-      quote:"Thank you. Come again.",
-    character:"Apu Nahasapeemapetilon",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png?1497567511629",
-    characterDirection:"Left"
-  },
+      category:"Smartphone",
+      description:"Camara principal: 12 MP + 108 MP + 10 MP + 10 MP",
+      description2:"Camara frontal: 40 MP",
+    item:"Celular Samsung Galaxy S22 Ultra",
+    precio:362.999,
+    image:"https://images.fravega.com/f500/3ffb6815c43f44aadbeaaeb86af2a273.jpg",
+      },
     {
       id:6,
-      category:"adultos",
-      quote:"I'm sleeping in the bath tub.",
-    character:"Marge Simpson",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FMargeSimpson.png?1497567512205",
-    characterDirection:"Right"
+      category:"Smartphone",
+      description:"Camara principal: 50 MP+ 50 MP + 2 MP",
+      description2:"Camara frontal: 60 MP",
+    item:"Celular Motorola Edge 30 Pro 256 GB",
+    precio:230000,
+    image:"https://images.fravega.com/f500/6fd9539be85e227e9af928286a546a11.jpg",
+    
   },
     {
       id:7,
-      category:"adultos",
-      quote:"And this is the snack holder where I can put my beverage or, if you will, cupcake.",
-    character:"Homer Simpson",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939",
-    characterDirection:"Right"
+      category:"Smartphone",
+      description:"Camara principal: 50 MP + 8 MP + 2 MP",
+      description2:"Camara frontal: 16 MP",
+    item:"Celular Motorola G22 128GB",
+    precio:52000,
+    image:"https://images.fravega.com/f500/1df905f399b2e1a9c9ac94cb47d0f685.jpg",
+    
   },
     {
       id:8,
-      category:"adultos",
-      quote:"By chilling my loins I increase the chances of impregnating my wife.",
-    character:"Apu Nahasapeemapetilon",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png?1497567511629","characterDirection":"Left"
+      category:"Electrodomestico",
+      description:"Capacidad: 23 litros",
+      description2:"Potencia: 800 watts",
+    item:"Microondas Samsung 800W 23Lt con Grill",
+    precio:48000,
+    image:"https://images.fravega.com/f500/dc2c38ecd9c156f049720f05f6e205cd.jpg",
   },
     {
       id:9,
-      category:"adultos",
-      quote:"I used to be with it. But then they changed what it was. Now what I'm with isn't it, and what's it seems scary and wierd. It'll happen to you.",
-    character:"Abe Simpson",
-    image:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FAbrahamSimpson.png?1497567511593",
-    characterDirection:"Right"
-  }
+      category:"Electrodomestico",
+      description:"Tipo de carga: Frontal",
+      description2:"Capacidad de lavado: De 5 a 7 Kg",
+      item:"Lavarropas Carga Frontal Inverter Samsung 7 Kg 1400 RPM ",
+      precio:137500,
+    image:"https://images.fravega.com/f500/574d7dad53aa30b375edc7aabd6437d1.jpg",
+    
+  },
+  {
+    id:10,
+    category:"Electrodomestico",
+    description:"Capacidad bruta: 564 litros",
+    description2:"Estantes regulables: Si",
+  item:"Heladera No Frost Whirlpool 541Lt",
+  precio:505000,
+  image:"https://images.fravega.com/f500/fb476ba3039ace3532a3ae0f1210de7e.jpg",
+  
+},
+{
+  id:11,
+  category:"Electrodomestico",
+  description:"Frio/Calor: Si",
+  description2:"Frigorias: 4000 a 4999",
+item:"Aire Acondicionado Split Frío/Calor Philco 4400F 5200W",
+precio:165000,
+image:"https://images.fravega.com/f500/2597e35022f8ce8e6e5dbd9ec8ba9c95.jpg",
+
+}
+
+  
   ];
 
-  export const getCharacterById = (id) =>{
-    return simpsonsApi[id];
+  export const getItemById = (id) =>{
+    return productos[id];
   }
 
 
 
-  export default simpsonsApi;
+  export default productos;

@@ -1,6 +1,6 @@
 .ItemListContainer{
     background-color: #202124;
-    width: 200px;
+    width: 300px;
     color: rgb(204, 197, 197);
     border: 1px gray solid;
     margin: 20px;
@@ -12,14 +12,42 @@
 }
 
 .personaje{
-    width: 200px;
+    width: 300px;
     background-color: white;
     border-radius: 15px 15px 0 0;
 }
 
-.item{
+.item-container { 
+     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item agregar-cantidad";
+  }
+
+  .masmenos{
+    width: 100px;
+    background-color:#6260d8 ;
+    color: white;
+  }
+  
+  .agregar-cantidad {
+     grid-area: agregar-cantidad;
+     display: flex;
+     width: 400px;
+     justify-content: space-around;
+     align-items: center;
+     color: white;
+     }
+  
+
+.item{   
+    grid-area: item;
+    justify-self: center;
     background-color: #202124;
-    width: 200px;
+    width: 300px;
     color: rgb(204, 197, 197);
     border: 1px gray solid;
     margin: 20px;
