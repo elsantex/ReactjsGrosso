@@ -1,7 +1,7 @@
 .navbar {  
     background-color: #1a1f29;
     color: white;
-    padding: 15px;
+    padding: 12.5px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,7 +17,7 @@
   .logoNav {
      grid-area: logoNav; 
      display: flex ;
-     width: 100px;
+     width: 90px;
     align-self: flex-start;
     }
   

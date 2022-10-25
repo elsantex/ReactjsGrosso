@@ -16,3 +16,16 @@
     background-color: white;
     border-radius: 15px 15px 0 0;
 }
+
+.item{
+    background-color: #202124;
+    width: 200px;
+    color: rgb(204, 197, 197);
+    border: 1px gray solid;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.item-description{
+    padding: 10px;
+}
